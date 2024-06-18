@@ -9,6 +9,10 @@ const app = express();
 // connect();
 
 
+app.use(express.json());
+
+
+
 app.get("/", (request, response, next) => {
 
 	response.json({
