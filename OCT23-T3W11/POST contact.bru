@@ -6,6 +6,18 @@ meta {
 
 post {
   url: http://localhost:3000/contacts/
-  body: none
+  body: json
   auth: none
+}
+
+body:json {
+  {
+    "name":"Alex",
+    "address": {
+      "street":"42 Wallaby Way",
+      "suburb":"Sydney",
+      "postcode":2000,
+      "state":"NSW"
+    }
+  }
 }
